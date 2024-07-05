@@ -277,13 +277,14 @@ data_out.on("value", function(snapshot) {
          
          document.getElementById('po').innerHTML=snapshot.val();
 
-         if (snapshot.val()<100){
+         if (snapshot.val()<90){
             //teso();
             setTimeout(teso, 500); 
         }
          else {
-            document.getElementById('hal1').style ="display:none" 
-           // setTimeout(tesd(), 10000);
+           
+          //  document.getElementById('hal1').style ="display:none" ;
+           //setTimeout(document.getElementById('hal1').style ="display:none" , 10000);
             //tesd();
 
          }
@@ -299,18 +300,25 @@ data_out.on("value", function(snapshot) {
 
       }
       function teso(){
-        document.getElementById('hal1').style ="display:block" 
-     
+        document.getElementById('hal1').style ="display:block" ;
         x.play(); 
         x2.play();
-        setTimeout(myGeeks, 5000);
+       // setTimeout(myGeeks1, 500);
+        setTimeout(myGeeks3, 5000);
         times++;
-        if(times < 20) setTimeout(teso, 500);
+        if(times < 20) setTimeout(teso,1000);
+        
       }
-      function myGeeks() {
+      function myGeeks3() {
        x3.play();
+       setTimeout(myGeeks, 10000);
       }
-   
+      
+    
+      function myGeeks() {
+        document.getElementById('hal1').style ="display:none" ;
+        
+      }
       //setTimeout(x3.play(), 5000);
     </script>
 
