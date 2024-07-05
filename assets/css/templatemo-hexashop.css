@@ -5,7 +5,19 @@ TemplateMo 571 Hexashop
 https://templatemo.com/tm-571-hexashop
 
 */
-
+.alert {
+  font: 14px Arial, sans-serif;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: white;
+  border: 1px solid lightgray;
+  box-shadow: 3px 3px 12px lightgray;
+}
+p { margin: 12px; }
+.alert .buttons {
+  float: right
+}
 /* ---------------------------------------------
 Table of contents
 ------------------------------------------------

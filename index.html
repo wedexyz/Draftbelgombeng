@@ -48,6 +48,7 @@
     </div>  
     <header class="header-area header-sticky" style="background-color: rgba(0, 0, 0, 0.041);border-color: rgba(22, 21, 21, 0);color:white;">
         <div class="container">
+           
             <div class="row">
                 <div class="col-12">
                     <nav class="main-nav">
@@ -55,6 +56,15 @@
                         <a href="index.html" class="logo">
                             <img src="logo.PNG" width="100">
                         </a>
+                      
+                          <div class="alert">
+                            <p>This webpage would like to play sounds</p>
+                            <p class="buttons">
+                              <button value="0">Block</button>
+                              <button value="1">Allow</button>
+                            </p>
+                          </div >
+                          <button style="display: none;" id="btn">trigger notification</button>
                         <H1>Aplikasi Bel otomatis Berbasis IOT</H1>
                         <span>Tim KKN Gombengsari 2024</span>
                         <!-- ***** Logo End ***** -->
@@ -180,8 +190,7 @@
         </div>
     </div>
     <!-- ***** Main Banner Area End ***** -->
-
-  
+   
     
 
     <!-- jQuery -->
@@ -207,7 +216,46 @@
     <script src="assets/js/custom.js"></script>
 
     <script>
+const audio = new Audio( 'https://dl.dropboxusercontent.com/s/h8pvqqol3ovyle8/tom.mp3' );
 
+
+audio.muted = true;
+
+const alert_elem = document.querySelector( '.alert' );
+
+audio.play().then( () => {
+  // already allowed
+  alert_elem.remove();
+  resetAudio();
+} )
+.catch( () => {
+  // need user interaction
+  alert_elem.addEventListener( 'click', ({ target }) => {
+    if( target.matches('button') ) {
+      const allowed = target.value === "1";
+      if( allowed ) {
+        audio.play()
+          .then( resetAudio );
+      }
+      alert_elem.remove();
+    }
+  } );
+} );
+
+document.getElementById( 'btn' ).addEventListener( 'click', (e) => {
+  if( audio.muted ) {
+    console.log( 'silent notification' );
+  }
+  else {
+    audio.play();
+  }
+} );
+
+function resetAudio() {
+  audio.pause();
+  audio.currentTime = 0;
+  audio.muted = false;
+}
 
 var config = {
   apiKey: "AIzaSyBYVwVZUBLXSm7iR5Fp6k-dziJGEuhwExk",
@@ -221,7 +269,7 @@ var config = {
   };
 firebase.initializeApp(config);
 var db = firebase.database();
-
+var times = 0;
 
 var data_out = db.ref("/gb/v1");
 data_out.on("value", function(snapshot) {
@@ -230,8 +278,9 @@ data_out.on("value", function(snapshot) {
          document.getElementById('po').innerHTML=snapshot.val();
 
          if (snapshot.val()<1000){
-            teso();
-         }
+            //teso();
+            setTimeout(teso, 500); 
+        }
          else {
             document.getElementById('hal1').style ="display:none" 
            // setTimeout(tesd(), 10000);
@@ -255,6 +304,8 @@ data_out.on("value", function(snapshot) {
         x.play(); 
         x2.play();
         setTimeout(myGeeks, 5000);
+        times++;
+        if(times < 20) setTimeout(teso, 500);
       }
       function myGeeks() {
        x3.play();
