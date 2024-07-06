@@ -1,235 +1,460 @@
 <!DOCTYPE html>
 <html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KKN IOT Aplikasi</title>
+    <link rel="shortcut icon" href="img\logo.PNG" type="image/x-icon">
+    <link rel="stylesheet" href="fontawesome/css/all.min.css"> <!-- https://fontawesome.com/ -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet" /> <!-- https://fonts.google.com/ -->
+    <link rel="stylesheet" href="css/tooplate-wave-cafe.css">
+<!--
+Tooplate 2121 Wave Cafe
+https://www.tooplate.com/view/2121-wave-cafe
+-->
+<audio id="myAudio1"><source src="Selamat Datang Di Kampung Kopi Gombengsari.mp3" type="audio/mpeg"></audio>
+<audio id="myAudio2"><source src="Wel.mp3" type="audio/mpeg"></audio> 
+<audio id="myAudio3"> <source src="angklung.mp3" type="audio/mpeg"></audio>
+</head>
 
-  <head>
 
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
-
-    
-
-    <!-- Additional CSS Files -->
-    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/font-awesome.css">
-    <link rel="stylesheet" href="assets/css/templatemo-hexashop.css">
-    <link rel="stylesheet" href="assets/css/owl-carousel.css">
-    <link rel="stylesheet" href="assets/css/lightbox.css">
-    </head>
-    
-    <body>
-        <audio id="myAudio">
-          
-            <source src="angklung.mp3" type="audio/mpeg">
-            
-          </audio>
-          <audio id="myAudio2">
-     
-          
-            <source src="Selamat Datang Di Kampung Kopi Gombengsari.mp3" type="audio/mpeg">
-          
-            
-          </audio>
-         
-          <audio id="myAudio3">
-
-            <source src="Wel.mp3" type="audio/mpeg">
-          </audio>
-
-    <!-- ***** Preloader Start ***** -->
-    <div id="preloader">
-        <div class="jumper">
-            <div></div>
-            <div></div>
-            <div></div>
-        </div>
-    </div>  
-    <header class="header-area header-sticky" style="background-color: rgba(0, 0, 0, 0.041);border-color: rgba(22, 21, 21, 0);color:white;">
-        <div class="container">
-           
-            <div class="row">
-                <div class="col-12">
-                    <nav class="main-nav">
-                        <!-- ***** Logo Start ***** -->
-                        <a href="index.html" class="logo">
-                            <img src="logo.PNG" width="100">
-                        </a>
-                      
-                          <div class="alert">
-                            <p>This webpage would like to play sounds</p>
-                            <p class="buttons">
-                              <button value="0">Block</button>
-                              <button value="1">Allow</button>
-                            </p>
-                          </div >
-                          <button style="display: none;" id="btn">trigger notification</button>
-                        <H1>Aplikasi Bel otomatis Berbasis IOT</H1>
-                        <span>Tim KKN Gombengsari 2024</span>
-                        <!-- ***** Logo End ***** -->
-                        <!-- ***** Menu Start ***** -->
-                            
-                        
-                        <!-- ***** Menu End ***** -->
-                    </nav>
-                </div>
-            </div>
-        </div>
-    </header>
-    <!-- ***** Preloader End ***** -->
-    
-    
-    <!-- ***** Header Area Start ***** -->
-    
-    <!-- ***** Header Area End ***** -->
-
-    <!-- ***** Main Banner Area Start ***** -->
-    <div class="main-banner" id="top">
-       
-        <div class="container-fluid">
-            
-            <video autoplay="" muted="" loop="" style="  position: fixed;
-            right: 0;
-            bottom: 0;
-           width: 100%; 
-            min-height: 5%;">
-                <source src="https://wedexyz.github.io/gombengsari/Pokdarwis/video.mp4 " type="video/mp4">
-            </video>
-        
-            <div class="row">
-                <div class="col-lg-6" >
-                    <div class="left-content">
-                        <div class="thumb">
-                            <div class="inner-content"  id="hal1">
-                               
-                                <img src="welcome.gif" >
-                              
-                            </div>
-                      
-                            
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-6">
-                    <div class="right-content">
-                        <div class="row">
-                            <div class="col-lg-6">
-                                <div class="right-first-image">
-                                    <div class="thumb">
-                                        <div class="inner-content">
-                                            <h4>Robusta</h4>
-                                            <span>Harga : Rp 5000</span>
-                                        </div>
-                                        <!---
-                                        <div class="hover-content">
-                                            <div class="inner">
-                                                <h4>Women</h4>
-                                                <p>Lorem ipsum dolor sit amet, conservisii ctetur adipiscing elit incid.</p>
-                                                <div class="main-border-button">
-                                                    <a href="#">Discover More</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        -->
-                                        
-                                        <!--
-                                         <button onclick="tesd()">tampil</button>
-                                        <button onclick="teso()">off</button>
-                                           <p id="demo"></p>
-                                        -->
-                                       
-                                     
-                                        <p id="po" style="display: none;"></p>
-                                        <img src="robusta.jpg" width="200" height="220">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-6">
-                                <div class="right-first-image">
-                                    <div class="thumb">
-                                        <div class="inner-content">
-                                            <h4>Arabica</h4>
-                                            <span>Harga : Rp 5000</span>
-                                        </div>
-                                        
-                                        <img src="arabica.jpg" width="200" height="220">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-6">
-                                <div class="right-first-image">
-                                    <div class="thumb">
-                                        <div class="inner-content">
-                                            <h4>Kucur Kopi</h4>
-                                            <span>Harga : Rp 5000</span>
-                                        </div>
-                                        
-                                        <img src="kucur.jpeg" width="200" height="220">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-6">
-                                <div class="right-first-image">
-                                    <div class="thumb">
-                                        <div class="inner-content">
-                                            <h4>Pket Kopi</h4>
-                                            <span>Harga : Rp 50.000</span>
-                                        </div>
-                                       
-                                        <img src="sofii.jpeg"width="200" height="220">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-            </div>
-        </div>
-    </div>
-    <!-- ***** Main Banner Area End ***** -->
+<body>
    
-    
+  <div class="tm-container">
+  
+    <div class="tm-row">
+      <!-- Site Header -->
+      <div class="tm-left">
+        <div class="tm-left-inner">
+          <div class="tm-site-header">
+            <i class="fas fa-coffee fa-3x tm-site-logo"></i>
+            <h1 class="tm-site-name">Rumah Digital</h1>
+        
+          </div>
+          <div class="tm-site-header"   id="hal1" style="display: none;" >
+            
+         <img src="img\welcome.gif" alt="" height="70%" >
+         
+         <p>Aplikasi IOT BEL </p>
+          </div>
+          <nav class="tm-site-nav">
+            <ul class="tm-site-nav-ul">
+              <li class="tm-page-nav-item">
+                <a href="#drink" class="tm-page-link active">
+                  <i class="fas fa-mug-hot tm-page-link-icon"></i>
+                  <span>Drink Menu</span>
+                </a>
+              </li>
+              
+              <li class="tm-page-nav-item">
+                <a href="#special" class="tm-page-link">
+                  <i class="fas fa-glass-martini tm-page-link-icon"></i>
+                  <span>Special Items</span>
+                </a>
+              </li>
+                
 
-    <!-- jQuery -->
-    <script src="assets/js/jquery-2.1.0.min.js"></script>
+              <li class="tm-page-nav-item">
+                <a href="" class="tm-page-link">
+                 <img src="img/logo.PNG" width="100" alt="">
+                 <img src="img/Logo-Universitas-PGRI-Banyuwangi-Kampus-Merdeka-putih.png" width="250" alt="">
+                 <span>KKN UNIBA 2024</span>
+                </a>
+              </li>
+              
+           
+              
 
-    <!-- Bootstrap -->
-    <script src="assets/js/popper.js"></script>
-    <script src="assets/js/bootstrap.min.js"></script>
+              
+            </ul>
+          </nav>
+        </div>        
+      </div>
 
-    <!-- Plugins -->
-    <script src="assets/js/owl-carousel.js"></script>
-    <script src="assets/js/accordions.js"></script>
-    <script src="assets/js/datepicker.js"></script>
-    <script src="assets/js/scrollreveal.min.js"></script>
-    <script src="assets/js/waypoints.min.js"></script>
-    <script src="assets/js/jquery.counterup.min.js"></script>
-    <script src="assets/js/imgfix.min.js"></script> 
-    <script src="assets/js/slick.js"></script> 
-    <script src="assets/js/lightbox.js"></script> 
-    <script src="assets/js/isotope.js"></script> 
-    <script src="db.js"></script>
-    <!-- Global Init -->
-    <script src="assets/js/custom.js"></script>
 
-    <script>
+
+      <div class="tm-right">
+        <main class="tm-main">
+          <div id="drink" class="tm-page-content">
+            <!-- Drink Menu Page -->
+            <nav class="tm-black-bg tm-drinks-nav">
+              <ul>
+                <li>
+                  <a href="#" class="tm-tab-link " data-id="cold">Iced Coffee</a>
+                </li>
+                <li>
+                  <a href="#" class="tm-tab-link active" data-id="hot">Hot Coffee</a>
+                </li>
+                <li>
+                  <a href="#" class="tm-tab-link" data-id="juice">Fruit Juice</a>
+                </li>
+              </ul>
+            </nav>
+
+            <div id="cold" class="tm-tab-content">
+              <div class="tm-list">
+                <div class="tm-list-item">          
+                  <img src="img/iced-americano.png" alt="Image" class="tm-list-item-img">
+                  <div class="tm-black-bg tm-list-item-text">
+                    <h3 class="tm-list-item-name">Iced Americano<span class="tm-list-item-price">$10.25</span></h3>
+                    <p class="tm-list-item-description">Here is a short description for the first item. Wave Cafe Template is provided by Tooplate.</p>
+                  </div>
+                </div>
+                <div class="tm-list-item">          
+                  <img src="img/iced-cappuccino.png" alt="Image" class="tm-list-item-img">
+                  <div class="tm-black-bg tm-list-item-text">
+                    <h3 class="tm-list-item-name">Iced Cappuccino<span class="tm-list-item-price">$12.50</span></h3>
+                    <p class="tm-list-item-description">Here is a list of 4 items or add more. You can use this template for commercial purposes.</p>
+                  </div>
+                </div>
+                <div class="tm-list-item">          
+                  <img src="img/iced-espresso.png" alt="Image" class="tm-list-item-img">
+                  <div class="tm-black-bg tm-list-item-text">
+                    <h3 class="tm-list-item-name">Iced Espresso<span class="tm-list-item-price">$14.25</span></h3>
+                    <p class="tm-list-item-description">You are not permitted to redistribute this template ZIP file on any other template websites.</p>
+                  </div>
+                </div>
+                <div class="tm-list-item">          
+                  <img src="img/iced-latte.png" alt="Image" class="tm-list-item-img">
+                  <div class="tm-black-bg tm-list-item-text">
+                    <h3 class="tm-list-item-name">Iced Latte<span class="tm-list-item-price">$11.50</span></h3>
+                    <p class="tm-list-item-description">Contents are organized into 3 tabs. Please <a href="https://www.tooplate.com/contact" rel="nofollow" target="_parent">contact Tooplate</a> if you have anything to ask.</p>
+                  </div>
+                </div> 
+                                       
+              </div>
+            </div> 
+
+            <div id="hot" class="tm-tab-content">
+              <div class="tm-list">
+              
+                <div class="tm-list-item">          
+                  <img src="img/hot-americano.png" alt="Image" class="tm-list-item-img">
+                  <div class="tm-black-bg tm-list-item-text">
+                    <h3 class="tm-list-item-name">Robusta<span class="tm-list-item-price">RP 5.000</span></h3>
+                    <p class="tm-list-item-description">Kopi ini punya aroma yang tegas, body atau tekstur yang utuh, serta rasa yang cukup smooth seperti sirup</p>              
+                  </div>
+                </div>
+                <div class="tm-list-item">          
+                  <img src="img/hot-cappuccino.png" alt="Image" class="tm-list-item-img">
+                  <div class="tm-black-bg tm-list-item-text">
+                    <h3 class="tm-list-item-name">Arabica<span class="tm-list-item-price">Rp 10.000</span></h3>
+                    <p class="tm-list-item-description">Arabika dikenal dengan rasanya yang halus, kompleks, dan manis, </p>                    
+                  </div>
+                </div>
+                <div class="tm-list-item">          
+                  <img src="img/hot-espresso.png" alt="Image" class="tm-list-item-img">
+                  <div class="tm-black-bg tm-list-item-text">
+                    <h3 class="tm-list-item-name">Espresso<span class="tm-list-item-price">Rp 15.000</span></h3>
+                    <p class="tm-list-item-description">Espreso adalah jenis kopi yang dihasilkan dengan mengekstraksi biji kopi yang sudah digiling dengan menyemburkan air panas di bawah tekanan tinggi.</p>              
+                  </div>
+                </div>
+                <div class="tm-list-item">          
+                  <img src="img/hot-latte.png" alt="Image" class="tm-list-item-img">
+                  <div class="tm-black-bg tm-list-item-text">
+                    <h3 class="tm-list-item-name">Hot Latte<span class="tm-list-item-price">Rp 25.000</span></h3>
+                    <p class="tm-list-item-description">Page contents are organized into 3 tabs to show different lists of items.</p>              
+                  </div>
+                </div>
+                         
+              </div>
+            </div>
+
+            <div id="juice" class="tm-tab-content">
+              <div class="tm-list">
+                <div class="tm-list-item">          
+                  <img src="img/smoothie-1.png" alt="Image" class="tm-list-item-img">
+                  <div class="tm-black-bg tm-list-item-text">
+                    <h3 class="tm-list-item-name">Strawberry Smoothie<span class="tm-list-item-price">$12.50</span></h3>
+                    <p class="tm-list-item-description">Here is a short description for the item along with a squared thumbnail.</p>              
+                  </div>
+                </div>
+                <div class="tm-list-item">          
+                  <img src="img/smoothie-2.png" alt="Image" class="tm-list-item-img">
+                  <div class="tm-black-bg tm-list-item-text">
+                    <h3 class="tm-list-item-name">Red Berry Smoothie<span class="tm-list-item-price">$14.50</span></h3>
+                    <p class="tm-list-item-description">Here is a list of 4 items or add more. You can use this template for commercial purposes.</p>                    
+                  </div>
+                </div>
+                <div class="tm-list-item">          
+                  <img src="img/smoothie-3.png" alt="Image" class="tm-list-item-img">
+                  <div class="tm-black-bg tm-list-item-text">
+                    <h3 class="tm-list-item-name">Pineapple Smoothie<span class="tm-list-item-price">$16.50</span></h3>
+                    <p class="tm-list-item-description">Left side logo and main menu are fixed. The video background is fixed.</p>              
+                  </div>
+                </div>
+                <div class="tm-list-item">          
+                  <img src="img/smoothie-4.png" alt="Image" class="tm-list-item-img">
+                  <div class="tm-black-bg tm-list-item-text">
+                    <h3 class="tm-list-item-name">Spinach Smoothie<span class="tm-list-item-price">$18.50</span></h3>
+                    <p class="tm-list-item-description">You are not allowed to redistribute the template ZIP file on other template sites.</p>              
+                  </div>
+                </div>              
+              </div>
+            </div>
+            <!-- end Drink Menu Page -->
+          </div>
+
+          <!-- end About Us Page -->
+
+          <!-- Special Items Page -->
+          <div id="special" class="tm-page-content">
+            <div class="tm-special-items">
+              <div class="tm-black-bg tm-special-item">
+                <img src="img/special-01.jpg" alt="Image">
+                <div class="tm-special-item-description">
+                  <h2 class="tm-text-primary tm-special-item-title">Special One</h2>
+                  <p class="tm-special-item-text">Here is a short text description for the first special item. You are not allowed to redistribute this template ZIP file.</p>  
+                </div>
+              </div>
+              <div class="tm-black-bg tm-special-item">
+                <img src="img/special-02.jpg" alt="Image">
+                <div class="tm-special-item-description">
+                  <h2 class="tm-text-primary tm-special-item-title">Second Item</h2>
+                  <p class="tm-special-item-text">You are allowed to download, modify and use this template for your commercial or non-commercial websites.</p>  
+                </div>
+              </div>
+              <div class="tm-black-bg tm-special-item">
+                <img src="img/special-03.jpg" alt="Image">
+                <div class="tm-special-item-description">
+                  <h2 class="tm-text-primary tm-special-item-title">Third Special Item</h2>
+                  <p class="tm-special-item-text">Pellentesque in ultrices mi, quis mollis nulla. Quisque sed commodo est, quis tincidunt nunc.</p>  
+                </div>
+              </div>
+              <div class="tm-black-bg tm-special-item">
+                <img src="img/special-04.jpg" alt="Image">
+                <div class="tm-special-item-description">
+                  <h2 class="tm-text-primary tm-special-item-title">Special Item Fourth</h2>
+                  <p class="tm-special-item-text">Vivamus finibus nulla sed metus sagittis, sed ultrices magna aliquam. Mauris fermentum.</p>  
+                </div>
+              </div>      
+              <div class="tm-black-bg tm-special-item">
+                <img src="img/special-05.jpg" alt="Image">
+                <div class="tm-special-item-description">
+                  <h2 class="tm-text-primary tm-special-item-title">Sixth Sense</h2>
+                  <p class="tm-special-item-text">Here is a short text description for sixth item. This text is four lines.</p>  
+                </div>
+              </div>
+              <div class="tm-black-bg tm-special-item">
+                <img src="img/special-06.jpg" alt="Image">
+                <div class="tm-special-item-description">
+                  <h2 class="tm-text-primary tm-special-item-title">Seventh Item</h2>
+                  <p class="tm-special-item-text">Curabitur eget erat sit amet sapien aliquet vulputate quis sed arcu.</p>  
+                </div>
+              </div>                      
+            </div>            
+          </div>
+          <!-- end Special Items Page -->
+
+         
+          <!-- end Contact Page -->
+        </main>
+      </div>    
+    </div>
+    <footer class="tm-site-footer">
+      <p class="tm-black-bg tm-footer-text">KKN 2024 UNIBA 
+      | Design: UNIBA</a></p>
+    </footer>
+  </div>
+  <div class="alert">
+    <p>Klik Untuk Aktivasi ijin Sound</p>
+    <p class="buttons">
+      <button value="0">Tolak</button>
+      <button value="1">Ijinkan</button>
+    </p>
+  </div >
+  <button style="display: none;" id="btn">trigger notification</button>
+  <!-- Background video -->
+  <div class="tm-video-wrapper">
+      <i id="tm-video-control-button" class="fas fa-pause"></i>
+      <video autoplay muted loop id="tm-video">
+          <source src="https://wedexyz.github.io/gombengsari/Pokdarwis/video.mp4" type="video/mp4">
+      </video>
+  </div>
+
+  <script src="js/jquery-3.4.1.min.js"></script>    
+  <script src="db.js"></script>
+  <script>
+
+    function setVideoSize() {
+      const vidWidth = 1920;
+      const vidHeight = 1080;
+      const windowWidth = window.innerWidth;
+      const windowHeight = window.innerHeight;
+      const tempVidWidth = windowHeight * vidWidth / vidHeight;
+      const tempVidHeight = windowWidth * vidHeight / vidWidth;
+      const newVidWidth = tempVidWidth > windowWidth ? tempVidWidth : windowWidth;
+      const newVidHeight = tempVidHeight > windowHeight ? tempVidHeight : windowHeight;
+      const tmVideo = $('#tm-video');
+
+      tmVideo.css('width', newVidWidth);
+      tmVideo.css('height', newVidHeight);
+    }
+
+    function openTab(evt, id) {
+      $('.tm-tab-content').hide();
+      $('#' + id).show();
+      $('.tm-tab-link').removeClass('active');
+      $(evt.currentTarget).addClass('active');
+    }    
+
+    function initPage() {
+      let pageId = location.hash;
+
+      if(pageId) {
+        highlightMenu($(`.tm-page-link[href^="${pageId}"]`)); 
+        showPage($(pageId));
+      }
+      else {
+        pageId = $('.tm-page-link.active').attr('href');
+        showPage($(pageId));
+      }
+    }
+
+    function highlightMenu(menuItem) {
+      $('.tm-page-link').removeClass('active');
+      menuItem.addClass('active');
+    }
+
+    function showPage(page) {
+      $('.tm-page-content').hide();
+      page.show();
+    }
+
+    $(document).ready(function(){
+
+      /***************** Pages *****************/
+
+      initPage();
+
+      $('.tm-page-link').click(function(event) {
+        
+        if(window.innerWidth > 991) {
+          event.preventDefault();
+        }
+
+        highlightMenu($(event.currentTarget));
+        showPage($(event.currentTarget.hash));
+      });
+
+      
+      /***************** Tabs *******************/
+
+      $('.tm-tab-link').on('click', e => {
+        e.preventDefault(); 
+        openTab(e, $(e.target).data('id'));
+      });
+
+      $('.tm-tab-link.active').click(); // Open default tab
+
+
+      /************** Video background *********/
+
+      setVideoSize();
+
+      // Set video background size based on window size
+      let timeout;
+      window.onresize = function(){
+        clearTimeout(timeout);
+        timeout = setTimeout(setVideoSize, 100);
+      };
+
+      // Play/Pause button for video background      
+      const btn = $("#tm-video-control-button");
+
+      btn.on("click", function(e) {
+        const video = document.getElementById("tm-video");
+        $(this).removeClass();
+
+        if (video.paused) {
+          video.play();
+          $(this).addClass("fas fa-pause");
+        } else {
+          video.pause();
+          $(this).addClass("fas fa-play");
+        }
+      });
+    });
+      
+  </script>
+
+  <script>
+
+var config = {
+  apiKey: "AIzaSyBYVwVZUBLXSm7iR5Fp6k-dziJGEuhwExk",
+  authDomain: "megaboth007.firebaseapp.com",
+  databaseURL: "https://megaboth007.firebaseio.com",
+  projectId: "megaboth007",
+  storageBucket: "megaboth007.appspot.com",
+  messagingSenderId: "942424390212",
+  appId: "1:942424390212:web:c3622743b0fba57b5a1a11"
+  };
+
+firebase.initializeApp(config);
+var db = firebase.database();
+var data_out = db.ref("/gb/v1");
+
+
+
+data_out.on("value", function(snapshot) {
+//document.getElementById('po').innerHTML=snapshot.val();
+  if (snapshot.val()<90){
+           teso();
+          //  setTimeout(teso, 1000); 
+        }
+        /*
+         else {
+           
+          //  document.getElementById('hal1').style ="display:none" ;
+           //setTimeout(document.getElementById('hal1').style ="display:none" , 10000);
+            //tesd();
+
+         }*/
+               });
+
+var x1 = document.getElementById("myAudio1"); 
+var x2 = document.getElementById("myAudio2"); 
+var x3 = document.getElementById("myAudio3");
+
+
+var times = 0;
+function teso(){
+document.getElementById('hal1').style ="display:block" ;
+// x1.play().then( x2.play() ).then( x3.play());
+x1.play();
+
+//.then( x3.play());
+
+setTimeout(myGeeks3, 5000);
+
+times++;
+if(times <2) setTimeout(teso,1000);
+}
+
+function myGeeks3() {
+  document.getElementById('hal1').style ="display:block" ;
+  x3.play(); 
+  x2.play();
+  //setTimeout(myGeeks3, 1000);
+  setTimeout(myGeeks, 10000);
+      }
+      
+function myGeeks() {
+  document.getElementById('hal1').style ="display:none" ;
+  setTimeout(myGeeks, 20000);
+      }
+
+
 const audio = new Audio( 'https://dl.dropboxusercontent.com/s/h8pvqqol3ovyle8/tom.mp3' );
-
-
 audio.muted = true;
-
 const alert_elem = document.querySelector( '.alert' );
-
 audio.play().then( () => {
   // already allowed
   alert_elem.remove();
   resetAudio();
 } )
 .catch( () => {
-  // need user interaction
+ 
   alert_elem.addEventListener( 'click', ({ target }) => {
     if( target.matches('button') ) {
       const allowed = target.value === "1";
@@ -257,70 +482,8 @@ function resetAudio() {
   audio.muted = false;
 }
 
-var config = {
-  apiKey: "AIzaSyBYVwVZUBLXSm7iR5Fp6k-dziJGEuhwExk",
-  authDomain: "megaboth007.firebaseapp.com",
-  databaseURL: "https://megaboth007.firebaseio.com",
-  projectId: "megaboth007",
-  storageBucket: "megaboth007.appspot.com",
-  messagingSenderId: "942424390212",
-  appId: "1:942424390212:web:c3622743b0fba57b5a1a11"
 
-  };
-firebase.initializeApp(config);
-var db = firebase.database();
-var times = 0;
-
-var data_out = db.ref("/gb/v1");
-data_out.on("value", function(snapshot) {
-           
-         
-         document.getElementById('po').innerHTML=snapshot.val();
-
-         if (snapshot.val()<90){
-            //teso();
-            setTimeout(teso, 500); 
-        }
-         else {
-           
-          //  document.getElementById('hal1').style ="display:none" ;
-           //setTimeout(document.getElementById('hal1').style ="display:none" , 10000);
-            //tesd();
-
-         }
-               });
-        var x = document.getElementById("myAudio"); 
-        var x2 = document.getElementById("myAudio2"); 
-        var x3 = document.getElementById("myAudio3"); 
-      function tesd(){
-        document.getElementById('hal1').style ="display:none" 
-        x.pause(); 
-        x2.pause(); 
-        x3.pause(); 
-
-      }
-      function teso(){
-        document.getElementById('hal1').style ="display:block" ;
-        x.play(); 
-        x2.play();
-       // setTimeout(myGeeks1, 500);
-        setTimeout(myGeeks3, 5000);
-        times++;
-        if(times < 20) setTimeout(teso,1000);
-        
-      }
-      function myGeeks3() {
-       x3.play();
-       setTimeout(myGeeks, 10000);
-      }
-      
-    
-      function myGeeks() {
-        document.getElementById('hal1').style ="display:none" ;
-        
-      }
-      //setTimeout(x3.play(), 5000);
     </script>
 
-  </body>
+</body>
 </html>
